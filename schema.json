@@ -1,1 +1,27 @@
-
+{
+  "type": "object",
+  "properties": {
+    "UseCase": { "type": "string" },
+    "SuggestedAutomationAreas": { "type": "array", "items": { "type": "string" } },
+    "ModelRecommendation": {
+      "type": "object",
+      "properties": {
+        "Model": { "type": "string" },
+        "Reason": { "type": "string" },
+        "EstimatedCostPer1000Tokens": { "type": "string" }
+      }
+    },
+    "Estimates": {
+      "type": "object",
+      "properties": {
+        "MonthlyQueries": { "type": "integer" },
+        "AverageTokensPerQuery": { "type": "integer" },
+        "MonthlyCost": { "type": "string" },
+        "PotentialHumanTimeSaved": { "type": "string" },
+        "ROI": { "type": "string" }
+      }
+    },
+    "AgentRecommendation": { "type": "string" }
+  },
+  "required": ["UseCase", "ModelRecommendation", "Estimates", "AgentRecommendation"]
+}
