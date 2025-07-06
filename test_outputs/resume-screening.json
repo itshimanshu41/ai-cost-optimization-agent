@@ -1,0 +1,21 @@
+{
+  "UseCase": "Screening resumes and shortlisting candidates using AI.",
+  "SuggestedAutomationAreas": [
+    "Resume parsing",
+    "Keyword matching",
+    "Candidate ranking"
+  ],
+  "ModelRecommendation": {
+    "Model": "Mistral",
+    "Reason": "Mistral provides a cost-effective solution for resume screening, offering decent performance for keyword extraction and candidate ranking.",
+    "EstimatedCostPer1000Tokens": "$0.001"
+  },
+  "Estimates": {
+    "MonthlyQueries": 2000,
+    "AverageTokensPerQuery": 500,
+    "MonthlyCost": "$1",
+    "PotentialHumanTimeSaved": "80 hours",
+    "ROI": "Significant time and cost savings in the recruitment process."
+  },
+  "AgentRecommendation": "Utilizing Mistral for automated resume screening is a cost-effective solution for efficient candidate shortlisting."
+}
